@@ -23,7 +23,13 @@ def border_with_zeros(arr):
         ])
     '''
     # your code here!
-    pass
+
+    z = np.zeros(16)
+    zr = z.reshape(4,4)
+    print(zr)
+
+    zr[1:3,1:3] = arr
+    return zr
 
 if __name__ == '__main__':
     # Test your code here!
